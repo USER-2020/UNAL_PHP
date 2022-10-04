@@ -21,6 +21,8 @@ include_once 'db.php';
           <th scope="col">Nombre</th>
           <th scope="col">fecha_nacimiento</th>
           <th scope="col">P.A.P.A</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
         </tr>
         </thead>
         <?php
