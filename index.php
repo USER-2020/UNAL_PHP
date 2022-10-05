@@ -29,6 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a href="index.php" class="navbar-brand">CRUD PHP</a>
@@ -61,12 +62,12 @@
                             <input type="text" name="nombre" class="form-control" placeholder="Ingrese Nombre" autofocus required>
                             </div>
                         <div class="mb-3">
-                            <lable for="fecha_nacimiento" class="form-label">Fecha nacimiento:<
+                            <lable for="fecha_nacimiento" class="form-label">Fecha nacimiento
                             <input type="date" name="fecha_nacimiento" class="form-control" placeholder="Ingrese fecha de nacimiento" autofocus required>
                         </div>
                         <div class="mb-3">
                             <lable for="p_a_p_a" class="form-label">P.A.P.A
-                            <input type="float" name="p_a_p_a" class="form-control" placeholder="Ingresar P.A.P.A" autofocus required>
+                            <input id="papa" type="number" step=0.1 name="p_a_p_a" class="form-control" placeholder="Ingresar P.A.P.A" onchange="verificar()"autofocus required>
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save_task" value="Save Task">
                         
@@ -75,5 +76,6 @@
             </div>
         </div>
     </div>
+    <script src="verificar.js"></script>
 </body>
 </html>

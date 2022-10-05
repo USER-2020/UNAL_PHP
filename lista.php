@@ -13,6 +13,7 @@ include_once 'db.php';
     <title>Document</title>
 </head>
 <body>
+    <div class="col-md-8">
     <h1>Lista</h1>
         <table class="table table-hover"> 
             <thead>
@@ -46,8 +47,10 @@ include_once 'db.php';
                 <td><?php echo  $Nombre?> </td>
                 <td><?php echo $fecha_nacimiento?> </td>
                 <td><?php echo $P_A_P_A?> </td>
-                <td><a href="delete.php?id=<?php echo $id;?>" class="btn btn-danger">Eliminar</a></td>
-                <td><a href="update.php?id=<?php echo $id;?>" class="btn btn-primary">Actualizar</a></td>
+                <td><a href="delete.php?id=<?php echo $id;?>" class="btn btn-danger">Eliminar</a>
+                    <a href="update.php?id=<?php echo $id;?>" class="btn btn-primary">Actualizar</a>
+                </td>
+                
 
             </tr>
             <?php $contador++;
@@ -55,6 +58,8 @@ include_once 'db.php';
         }?>
         </tbody>
         </table>
+    </div>
+    
     
     
 </body>
